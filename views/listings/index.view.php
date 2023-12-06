@@ -1,12 +1,9 @@
 <?php
 loadPartial('head');
 loadPartial('navbar');
-loadPartial('showcase_search');
 loadPartial('top_banner');
 
 ?>
-
-
 <!-- Job Listings -->
 <section>
   <div class="container mx-auto p-4 mt-4">
@@ -163,10 +160,6 @@ loadPartial('top_banner');
         </div>
       </div>
     </div>
-    <a href="/listings" class="block text-xl text-center">
-      <i class="fa fa-arrow-alt-circle-right"></i>
-      Show All Jobs
-    </a>
 </section>
 
 
