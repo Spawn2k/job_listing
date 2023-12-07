@@ -24,10 +24,11 @@ define('BASE_PATH', pathinfo(__DIR__));
  * 
  */
 
-function loadView($name)
+function loadView($name, $data = [])
 {
   $viewPath = basePath("views/{$name}.view.php");
   if (file_exists($viewPath)) {
+    extract($data);
     require $viewPath;
   } else {
     echo "View '{$name} not Found";
@@ -73,4 +74,16 @@ function dd($value)
   var_dump($value);
   echo '</pre>';
   exit();
+}
+
+/**
+ * Format salary
+ * 
+ * @param string $salray
+ * @return string $formated Salary
+ */
+
+function formatSalary($salary)
+{
+  return '$' . number_format(floatval($salary));
 }
