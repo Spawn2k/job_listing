@@ -26,7 +26,7 @@ define('BASE_PATH', pathinfo(__DIR__));
 
 function loadView($name, $data = [])
 {
-  $viewPath = basePath("views/{$name}.view.php");
+  $viewPath = basePath("App/views/{$name}.view.php");
   if (file_exists($viewPath)) {
     extract($data);
     require $viewPath;
@@ -46,7 +46,7 @@ function loadView($name, $data = [])
 
 function loadPartial($name)
 {
-  $partialPath = basePath("views/partials/{$name}.php");
+  $partialPath = basePath("App/views/partials/{$name}.php");
   if (file_exists($partialPath)) {
     require $partialPath;
   } else {
@@ -54,27 +54,27 @@ function loadPartial($name)
   }
 }
 
-/**
- * Inspect a value(s)
- * 
- * @param mixed $value
- * @return void
- */
+// /**
+//  * Inspect a value(s)
+//  * 
+//  * @param mixed $value
+//  * @return void
+//  */
 
-function dump($value)
-{
-  echo '<pre>';
-  var_dump($value);
-  echo '</pre>';
-};
+// function dump($value)
+// {
+//   echo '<pre>';
+//   var_dump($value);
+//   echo '</pre>';
+// };
 
-function dd($value)
-{
-  echo '<pre>';
-  var_dump($value);
-  echo '</pre>';
-  exit();
-}
+// function dd($value)
+// {
+//   echo '<pre>';
+//   var_dump($value);
+//   echo '</pre>';
+//   exit();
+// }
 
 /**
  * Format salary
