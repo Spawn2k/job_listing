@@ -28,7 +28,7 @@ class Router
     }
 
     if (!method_exists($controller, $controllerMethod)) {
-      throw new Exception("No method {$controller} exits");
+      throw new Exception("No method {$controllerMethod} exits");
     }
 
     $this->routes[] = [
@@ -116,6 +116,11 @@ class Router
   {
 
     $requestMethod = $_SERVER['REQUEST_METHOD'];
+
+    if ($requestMethod === 'POST' && isset($_POST['_method'])) {
+      $requestMethod = strtoupper($_POST['_method']);
+    }
+
     foreach ($this->routes as $route) {
       $uriSegments = explode('/', trim($uri, '/'));
 
@@ -127,7 +132,6 @@ class Router
         $params = [];
 
         $match = true;
-
         for ($i = 0; $i < count($uriSegments); $i++) {
           if ($routeSegments[$i] !== $uriSegments[$i] && !preg_match('/\{(.+?)\}/', $routeSegments[$i])) {
             $match = false;
@@ -135,10 +139,11 @@ class Router
           }
 
           if (preg_match('/\{(.+?)\}/', $routeSegments[$i], $matches)) {
-            $params[$matches[1]] = $uriSegments[1];
+            $params[$matches[1]] = $uriSegments[$i];
           }
         }
         if ($match) {
+
           $controller =  $route['controller'];
           $controllerMethod = $route['controllerMethod'];
           // Instatiate the controller and call the method
