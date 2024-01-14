@@ -1,0 +1,75 @@
+.main-create {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+
+    section {
+        width: 40rem;
+        background-color: white;
+        padding: 2rem;
+        border-radius: $border;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+        form {
+            >h2 {
+                text-align: center;
+                color: #6B727F;
+                padding-bottom: 1rem;
+            }
+
+            .btn-submit {
+                width: 100%;
+                padding: .5rem 1rem;
+                margin-bottom: 1rem;
+                border-radius: 3px;
+                border: none;
+                color: white;
+                background-color: $btn-save;
+            }
+
+            .btn-cancel {
+                display: block;
+                width: 100%;
+                background-color: tomato;
+                padding: .5rem 1rem;
+                color: white;
+                border-radius: 3px;
+                text-align: center;
+                border: none;
+                background-color: $btn-cancel;
+            }
+        }
+
+        >h2,
+        p {
+            text-align: center;
+        }
+
+        >h2 {
+            padding-bottom: 1.5rem;
+            font-size: $font-size-headline;
+        }
+
+        >p {
+            padding-bottom: 1rem;
+            font-size: 1.5rem;
+            color: #6B727F;
+        }
+
+        .input-container {
+            padding-bottom: 1rem;
+
+            input,
+            textarea {
+                width: 100%;
+                padding: .5rem 1rem;
+                outline: none;
+                border: 1px solid #e5e7eb;
+                border-radius: 3px;
+            }
+        }
+    }
+}

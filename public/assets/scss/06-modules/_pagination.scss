@@ -1,0 +1,64 @@
+.section-pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    .pagination-container {
+        display: flex;
+        align-items: center;
+        border: 1px solid grey;
+        width: fit-content;
+        border-radius: 6px;
+        overflow: hidden;
+
+        .pagination-min-page {
+            padding: .2rem .5rem;
+            border-left: 1px solid grey;
+            background-color: white;
+            color: $pagination;
+
+        }
+
+        .pagination-max-page {
+            padding: .2rem .5rem;
+            border-right: 1px solid grey;
+            background-color: white;
+            color: $pagination;
+        }
+
+        .pagination-first,
+        .pagination-last {
+            padding: .2rem .5rem;
+            background-color: white;
+            // border: 1px solid grey;
+            color: $pagination;
+
+            &.disable {
+                pointer-events: none;
+                cursor: default;
+                color: darkgray;
+            }
+        }
+
+        .pagination-page-container {
+            display: flex;
+
+            .pagination-el {
+                padding: .2rem .5rem;
+                background-color: white;
+                color: $pagination;
+                border-left: 1px solid grey;
+
+                &:last-child {
+                    border-right: 1px solid grey;
+                }
+
+                &.active {
+                    background-color: $pagination;
+                    color: white;
+                }
+
+            }
+        }
+    }
+}

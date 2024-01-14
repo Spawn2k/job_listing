@@ -1,0 +1,117 @@
+.section-main-listing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $secondary;
+  padding: 2rem 0;
+
+  .main-container {
+    width: 70vw;
+
+    >h2 {
+      padding-bottom: 2rem;
+    }
+
+    >button {
+      width: 100%;
+      background-color: $btn-card-details;
+      border: none;
+      padding: .8rem 1.8rem;
+      color: $btn-details-font;
+      border-radius: $border;
+    }
+
+    >p {
+      padding-bottom: 1.5rem;
+    }
+
+    .card-listing {
+      flex-grow: 1;
+      background-color: white;
+      padding: 1.7rem 1.5rem;
+      border-radius: $border;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+      margin-bottom: 2rem;
+
+      >a {
+        padding-bottom: 2rem;
+        color: $primary;
+        display: inline-block;
+      }
+
+      h2 {
+        padding-bottom: .6rem;
+      }
+
+      p {
+        padding-bottom: 1rem;
+      }
+
+      .btn-home {
+        padding: .5rem 1rem;
+        background-color: $btn-post;
+        border-radius: $border;
+        color: black;
+      }
+
+      ul {
+        padding: 1.2rem;
+        background-color: $secondary;
+        margin-bottom: .6rem;
+
+        li {
+          padding-bottom: .5rem;
+
+          span:first-child {
+            font-weight: bold;
+          }
+        }
+      }
+
+      button {
+        width: 100%;
+        background-color: $btn-card-details;
+        border: none;
+        padding: .8rem 1.8rem;
+        color: $btn-details-font;
+      }
+    }
+
+  }
+
+
+  .job-details-container {
+    background-color: white;
+    padding: 1.7rem 1.5rem;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: $border;
+    margin-bottom: 1.5rem;
+
+    h3 {
+      padding-bottom: 1rem;
+      color: #3B82F5;
+
+    }
+
+    p:nth-of-type(1) {
+      padding-bottom: 1rem;
+    }
+
+  }
+}
+
+.btn-home {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+
+  a {
+    padding: .5rem 1rem;
+    background-color: $btn-post;
+    border-radius: $border;
+    color: black;
+
+  }
+
+}

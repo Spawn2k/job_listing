@@ -1,0 +1,43 @@
+.flash-message-container {
+  position: absolute;
+  top: 4.56rem;
+  left: 0;
+  z-index: 100;
+
+  animation-name: flash;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+
+  p {
+    padding: .6rem 1rem;
+  }
+
+  .flash-message-success {
+    background-color: $btn-post;
+    color: black;
+  }
+
+  .flash-message-error {
+    background-color: tomato;
+    color: white;
+  }
+}
+
+
+@keyframes flash {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+
+  20% {
+    transform: translateX(0%);
+    opacity: 100%;
+  }
+
+  100% {
+    display: none;
+  }
+}

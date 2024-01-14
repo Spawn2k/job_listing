@@ -1,0 +1,73 @@
+.job-listings-card-container {
+  // padding: 1rem;
+  // background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  .card-listing {
+    flex-grow: 1;
+    background-color: white;
+    padding: 1rem;
+    border-radius: $border;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    >div {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: .5rem;
+
+      >div {
+        display: flex;
+
+        a:first-child {
+          margin-right: 1rem;
+          padding: .5rem 1rem;
+          background-color: lightcyan;
+          border-radius: $border;
+          cursor: pointer;
+        }
+
+        form {
+          button.btn-delete {
+          margin-right: 1rem;
+          padding: .5rem 1rem;
+          background-color: tomato;
+          border-radius: $border;
+          cursor: pointer;
+
+          }
+        }
+
+      }
+    }
+
+    h2,
+    p {
+      padding-bottom: .6rem;
+    }
+
+    ul {
+      padding: 1.2rem;
+      background-color: $secondary;
+      margin-bottom: .6rem;
+
+      li {
+        padding-bottom: .5rem;
+
+        span:first-child {
+          font-weight: bold;
+        }
+      }
+    }
+
+    button {
+      width: 100%;
+      background-color: $btn-card-details;
+      border: none;
+      padding: .8rem 1.8rem;
+      color: $btn-details-font;
+      cursor: pointer;
+    }
+  }
+}

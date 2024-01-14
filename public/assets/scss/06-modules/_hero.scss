@@ -1,0 +1,48 @@
+.section-hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../img/showcase.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 18rem;
+    position: relative;
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($color: #000000, $alpha: .6);
+        z-index: 1;
+    }
+
+    .form-container {
+        color: white;
+        z-index: 10;
+        position: relative;
+
+        h2 {
+            text-align: center;
+            padding-bottom: 1rem;
+            font-size: $font-size-headline;
+        }
+
+        form {
+            input {
+                padding: .5rem 1rem;
+                width: 15rem;
+            }
+
+            button {
+                padding: .5rem 1rem;
+                background-color: $btn-search;
+                border: none;
+                color: white;
+                cursor: pointer;
+            }
+        }
+    }
+}

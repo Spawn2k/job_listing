@@ -1,0 +1,43 @@
+.section-main-index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary;
+    padding: 2rem;
+
+    .main-container {
+        .job-listings-card-container {
+
+            .card-listing {
+                flex-basis: calc(33% - 2rem);
+
+                // >p {
+                //     min-height: 8rem;
+                // }
+            }
+        }
+
+        width: 70vw;
+    }
+
+    .job-listings {
+        padding: 1rem;
+        text-align: center;
+        border: 1px solid grey;
+        font-size: $font-size-logo;
+        margin-bottom: 1rem;
+
+    }
+}
+
+.btn-show-all-jobs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary;
+    padding: 0 0 2rem 0;
+
+    .main-container {
+        width: 70vw;
+    }
+}

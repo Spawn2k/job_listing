@@ -1,0 +1,12 @@
+{
+  "name": "job-listings",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+        "sass": "sass public/assets/scss/main.scss:public/assets/css/main.css -w --style=expanded",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

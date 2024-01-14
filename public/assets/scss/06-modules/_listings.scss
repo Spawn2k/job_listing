@@ -1,0 +1,17 @@
+.main-listings {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+
+  .job-listings-card-container {
+    width: 70vw;
+    flex-wrap: wrap;
+
+    .card-listing {
+      flex-basis: calc(33% - 2rem);
+      padding: 2rem;
+
+    }
+  }
+}

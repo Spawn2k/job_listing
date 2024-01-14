@@ -1,0 +1,44 @@
+.create_users {
+  .input-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    .input {
+      display: flex;
+      flex-direction: column;
+      flex-basis: calc(50% - 1rem);
+
+      label {
+        margin-bottom: .3rem;
+      }
+
+      input {
+        margin-bottom: .2rem;
+      }
+
+      &:last-child {
+        
+        flex-basis: calc(50% - 1rem);
+        align-items: flex-start;
+      }
+
+      .input-error {
+        font-size: .8rem;
+        color: tomato;
+      }
+    }
+
+  }
+
+  .btn-submit {
+    float: right;
+    border: none;
+    padding: .3rem .8rem;
+    color: $font-color;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: $btn-login;
+  }
+}

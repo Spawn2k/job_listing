@@ -1,0 +1,30 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $secondary;
+    padding-bottom: 2rem;
+
+    >div {
+        color: white;
+        background-color: $bg-post-job;
+        width: 70vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        border-radius: 4px;
+
+        >div h2 {
+            margin-bottom: .6rem;
+        }
+
+        button {
+            padding: .5rem 1rem;
+            background-color: $btn-post;
+            border: none;
+            border-radius: 4px;
+        }
+
+    }
+}

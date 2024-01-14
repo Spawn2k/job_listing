@@ -1,0 +1,10 @@
+parameters:
+	level: 5
+	paths:
+		- src
+		- tests
+		- App
+		- index.php
+		- public
+		- phpVersion:80120
+

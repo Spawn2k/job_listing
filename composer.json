@@ -1,0 +1,12 @@
+{
+	"name": "dt/test",
+	"autoload": {
+		"psr-4": {
+			"App\\": "App/"
+		}
+	},
+	"require": {
+		"fakerphp/faker": "^1.23",
+		"symfony/var-dumper": "^6.4"
+	}
+}

@@ -1,0 +1,19 @@
+.headline-section {
+    background-color: $primary;
+    color: white;
+    padding: 2rem 0;
+
+    h2,
+    p {
+        text-align: center;
+    }
+
+    h2 {
+        font-size: $font-size-headline;
+        padding-bottom: .5rem;
+    }
+
+    p {
+        font-size: $font-size-info;
+    }
+}

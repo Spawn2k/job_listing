@@ -1,0 +1,37 @@
+header {
+  background-color: $primary;
+  color: white;
+  padding: 1rem 4rem;
+  // display: flex;
+  // justify-content: center;
+
+  nav {
+    display: flex;
+    // width: 70vw;
+    justify-content: space-between;
+
+    align-items: center;
+
+    .logo {
+      font-size: $font-size-logo;
+      color: white;
+    }
+
+    ul {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 2rem;
+
+      a {
+        color: white;
+      }
+
+      .btn-logout {
+        background-color: tomato;
+        padding: .5rem 1rem;
+        border-radius: $border;
+      }
+    }
+  }
+}
