@@ -28,6 +28,7 @@ class Sanbox
     public function upload()
     {
         $file = $this->getFiles();
+
         $filePath = BASE_PATH . '/App/storage/'. $file['pic']['name'];
         move_uploaded_file($file['pic']['tmp_name'], $filePath);
         dump($file);

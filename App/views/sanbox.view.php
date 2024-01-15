@@ -12,11 +12,12 @@
 <body>
     <main>
         <div class="container py-5">
-            <h1>Hello world</h1>
+            <h1></h1>
             <button class="btn btn-secondary">Click</button>
             <form action="/upload" method="POST" enctype="multipart/form-data">
-                <input type="file" name="pic" >
+                <input type="file" name="pic">
                 <button>uploaded</button>
+                <?php  ?>
             </form>
         </div>
     </main>
