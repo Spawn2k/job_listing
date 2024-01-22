@@ -167,7 +167,6 @@ function updateUser($userId, $updateData)
     $users = getFile();
 
     unset($users[USER_ID . $userId]);
-    dump($users);
     $updatedUsers =  array_merge($updateData, $users);
     $updatedUsers = serialize($updatedUsers);
 
@@ -262,6 +261,8 @@ function destroy($userId)
         if($mainSave === true) {
             $backUp = saveToFile($user, 'txt', BACK_UP);
         }
+    } else {
+        return 'no user Found with the id ' .USER_ID . $userId;
     }
 }
 

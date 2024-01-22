@@ -6,13 +6,9 @@ require '../vendor/autoload.php';
 require 'function.php';
 
 $users = [];
-$test = getFile('users');
-save($test, 'json');
-dump($test);
 $getUser = getFile();
 if(isset($_POST['search'])) {
     $users = findParam($_POST['search']);
-    dump($users);
 }
 
 ?>

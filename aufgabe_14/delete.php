@@ -12,6 +12,10 @@ if(!isset($_POST['id'])) {
 
 
 if(isset($_POST['id'])) {
-    destroy($_POST['id']);
+    $error = destroy($_POST['id']);
+    if($error) {
+        echo $error;
+        exit();
+    }
     header('Location: /');
 }

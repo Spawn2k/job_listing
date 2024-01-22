@@ -1,1 +1,38 @@
-{"kunden_nr_123123":{"userId":"123123","firstname":"duyTuan","lastname":"road","street":"ksdjf","streetNumber":"234234","city":"hildesheim","zippCode":"189"},"kunden_nr_666":{"userId":"666","firstname":"skadjf","lastname":"road","street":"ksdjf","streetNumber":"234234","city":"hildesheim","zippCode":"189"},"kunden_nr_123":{"userId":"123","firstname":"skadjf","lastname":"road","street":"ksdjf","streetNumber":234234,"city":"hildesheim","zippCode":"189"},"kunden_nr_456":{"userId":"456","firstname":"skadjf","lastname":"road","street":"ksdjf","streetNumber":234234,"city":"hildesheim","zippCode":"189"},"kunden_nr_-23498":{"userId":"-23498","firstname":"duy tuan","lastname":"asdf","street":"Wei\u00dfenburger Str 17","streetNumber":"234","city":"asdf","zippCode":"345"},"kunden_nr_-456":{"userId":"-456","firstname":"sadf","lastname":"sdaf","street":"sadf","streetNumber":"sadf","city":"sadf","zippCode":"345"},"kunden_nr_234333":{"userId":"234333","firstname":"duy tuan","lastname":"nguyen","street":"Wei\u00dfenburger Str 17","streetNumber":"234","city":"asdf","zippCode":"234"},"kunden_nr_-4444":{"userId":"4444","firstname":"asdf","lastname":"asdf","street":"sadf","streetNumber":"sadf","city":"sadf234","zippCode":"234"},"kunden_nr_-3435":{"userId":"3435","firstname":"jaslkdfj","lastname":"laksjdf","street":"lakjfd","streetNumber":"laksdfj","city":"lkajsf","zippCode":"234"},"kunden_nr_34523":{"userId":"34523","firstname":"klsdjf","lastname":"klsjdf","street":"klsjf","streetNumber":"\taksdf","city":"lkasjdf","zippCode":"2342"},"kunden_nr_4565":{"userId":"4565","firstname":"345","lastname":"345","street":"345","streetNumber":"345","city":"345","zippCode":"3453"},"kunden_nr_123345":{"userId":"123345","firstname":"sdfsdf","lastname":"sadfasf","street":"sdfsdf","streetNumber":"sadf","city":"sdfsadf","zippCode":"32423"},"kunden_nr_34564":{"userId":"-34564","firstname":"sdfas","lastname":"sadfasdfasdf","street":"sadfsadf","streetNumber":"asfdasdfasdf","city":"asdf2","zippCode":"234234"}}
+{
+	"kunden_nr_111": {
+		"userId": "111",
+		"firstname": "duyTuan",
+		"lastname": "road",
+		"street": "ksdjf",
+		"streetNumber": "234234",
+		"city": "hildesheim",
+		"zippCode": "189"
+	},
+	"kunden_nr_666": {
+		"userId": "666",
+		"firstname": "skadjf",
+		"lastname": "road",
+		"street": "ksdjf",
+		"streetNumber": "234234",
+		"city": "hildesheim",
+		"zippCode": "189"
+	},
+	"kunden_nr_123": {
+		"userId": "123",
+		"firstname": "skadjf",
+		"lastname": "road",
+		"street": "ksdjf",
+		"streetNumber": 234234,
+		"city": "hildesheim",
+		"zippCode": "189"
+	},
+	"kunden_nr_456": {
+		"userId": "456",
+		"firstname": "skadjf",
+		"lastname": "road",
+		"street": "ksdjf",
+		"streetNumber": 234234,
+		"city": "hildesheim",
+		"zippCode": "189"
+	}
+}
